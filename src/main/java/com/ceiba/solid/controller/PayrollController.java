@@ -20,6 +20,7 @@ public class PayrollController {
     }
 
     @PostMapping("pay-provider")
+    //long ml de fecha
     public void payProvider(@RequestBody PagoEntity pagoEntity) {
         salaryService.payProvider(pagoEntity);
     }
